@@ -14,6 +14,7 @@ public class Passenger {
     public Passenger(String title, String name, String id,long phone,int age)
     {
         setTitle(title);
+        setName(name);
     }
 
    public void setTitle(String title){
