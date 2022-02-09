@@ -20,4 +20,17 @@ public class PassengerTest {
                 assertEquals(invalid, exceptionThrown.getMessage());
     }
 
+
+    @Test
+    void testConstructorName(){
+        myPass= new Passenger("Mr","Samim","123456789123",631111131,19);
+        assertEquals("Mr",myPass.getTitle());
+    }
+    @Test
+    void testConstructorInvalidName(){
+        final String invalid1 = "Invalid Name provided";
+        Exception exceptionThrown = assertThrows(IllegalArgumentException.class,()-> new Passenger("Mr","Sa","123456789123",631111131,19));
+        assertEquals(invalid1, exceptionThrown.getMessage());
+    }
+
 }
