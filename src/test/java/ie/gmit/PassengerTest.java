@@ -24,7 +24,7 @@ public class PassengerTest {
     @Test
     void testConstructorName(){
         myPass= new Passenger("Mr","Samim","123456789123",631111131,19);
-        assertEquals("Mr",myPass.getTitle());
+        assertEquals("Mr",myPass.getName());
     }
     @Test
     void testConstructorInvalidName(){
